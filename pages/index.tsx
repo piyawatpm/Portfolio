@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         <div className={styles.grid}>
           <Link href="/resume">
           <a className={styles.card}>
-            <h2>Resume &rarr;</h2>
+            <h2>Resume</h2>
             <p>Go to resume page</p>
           </a>
           </Link>
