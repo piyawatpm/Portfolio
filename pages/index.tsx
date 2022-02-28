@@ -27,6 +27,12 @@ const Home: NextPage = () => {
             <p>Go to News page</p>
           </a>
           </Link>
+          <Link href="/newsClients">
+          <a className={styles.card}>
+            <h2>News</h2>
+            <p>Go to News Clients page</p>
+          </a>
+          </Link>
         </div>
       </main>
 

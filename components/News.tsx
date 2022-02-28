@@ -1,4 +1,4 @@
-import React from 'react'
+
 // title, url, imageUrl, summary
 type NewProps = {
     title:string
@@ -8,6 +8,7 @@ type NewProps = {
     key:string
 }
 function New({title,url,imageUrl,summary}:NewProps) {
+  
   return (
     <>
     <h1>{title}</h1>
