@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import New from "../../components/News";
+import Title from "../../components/Title";
 
 // be title, url, imageUrl, summary
 function NewsPage({ article }: any) {
@@ -19,12 +19,13 @@ function NewsPage({ article }: any) {
       <h1>NewsPage</h1>
       {article.map((each: any) => {
         return (
-          <New
+          <Title
             key={each.id}
             title={each.title}
             url={each.url}
             imageUrl={each.imageUrl}
             summary={each.summary}
+            id={each.id}
           />
         );
       })}
@@ -34,7 +35,7 @@ function NewsPage({ article }: any) {
 
 export default NewsPage;
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const response = await fetch(
     "https://api.spaceflightnewsapi.net/v3/articles?_limit=50"
   );
@@ -43,5 +44,7 @@ export async function getServerSideProps() {
     props: {
       article: data,
     },
+    revalidate: 360 //should be regenerate every 1 hr
+    // notFound:true
   };
 }

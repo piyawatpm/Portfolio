@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import New from "../../components/News";
+import New from "../../components/Title";
 function NewsClient() {
   const [data, setData] = useState([]);
 

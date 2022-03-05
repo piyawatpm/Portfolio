@@ -18,7 +18,7 @@ const Home: NextPage = () => {
           <Link href="/resume">
           <a className={styles.card}>
             <h2>Resume</h2>
-            <p>Go to resume page</p>
+            <p>Go to resume page prefetch</p>
           </a>
           </Link>
           <Link href="/news">
