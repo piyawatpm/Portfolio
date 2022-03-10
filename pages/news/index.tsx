@@ -35,7 +35,7 @@ function NewsPage({ article }: any) {
 
 export default NewsPage;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const response = await fetch(
     "https://api.spaceflightnewsapi.net/v3/articles?_limit=50"
   );
@@ -44,7 +44,7 @@ export async function getStaticProps() {
     props: {
       article: data,
     },
-    revalidate: 360 //should be regenerate every 1 hr
+    // revalidate: 360 //should be regenerate every 1 hr
     // notFound:true
   };
 }

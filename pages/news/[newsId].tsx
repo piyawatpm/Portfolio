@@ -32,23 +32,23 @@ function NewDetail({ details }: any) {
     </>
   );
 }
-export async function getStaticPaths() {
-    const res = await fetch("https://api.spaceflightnewsapi.net/v3/articles?_limit=50");
-    const data = await res.json();
-    const pahts = data.map((news:any)=>{
-        return{
-            params:{
-                newsId:`${news.id}`
-            },
-        }
-    })
-  return {
-    paths:pahts,
-    fallback: false,
-  };
-}
+// export async function getStaticPaths() {
+//     const res = await fetch("https://api.spaceflightnewsapi.net/v3/articles?_limit=50");
+//     const data = await res.json();
+//     const pahts = data.map((news:any)=>{
+//         return{
+//             params:{
+//                 newsId:`${news.id}`
+//             },
+//         }
+//     })
+//   return {
+//     paths:pahts,
+//     fallback: false,
+//   };
+// }
 export default NewDetail;
-export async function getStaticProps(context: any) {
+export async function getServerSideProps(context: any) {
   const { params } = context;
   const { newsId } = params;
   const response = await fetch(
