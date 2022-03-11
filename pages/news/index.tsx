@@ -20,7 +20,7 @@ function NewsPage({ article, pageNo }: any) {
   const fetchNewData = async () => {
     const response = await fetch(
       `https://api.spaceflightnewsapi.net/v3/articles?_limit=10&_start=${
-        pages * 10
+        pages * 10 //do before state change because   *** page2 ==> start=1*10 ***
       }`
     );
     const data = await response.json();
@@ -32,8 +32,8 @@ function NewsPage({ article, pageNo }: any) {
      fetchNewData();
   };
   const handlePreviousPage =  () => {
-    setPages((page: number) => page - 1);
-     fetchNewData();
+    if(pages>1){setPages((page: number) => page - 1);
+     fetchNewData();}
   };
   return (
     <div>
@@ -66,24 +66,26 @@ function NewsPage({ article, pageNo }: any) {
 export default NewsPage;
 
 export async function getServerSideProps(context: any) {
-  const { query } = context;
+  const { query,req,res } = context;
   const { pages } = query;
   const pageNo = pages ? pages : "1";
   const url = pages
     ? `https://api.spaceflightnewsapi.net/v3/articles?_limit=10&_start=${
-        (parseInt(pageNo) - 1) * 10
+        (parseInt(pageNo) - 1) * 10 // 63*** page2 ==> start=1*10 ***
       }`
     : `https://api.spaceflightnewsapi.net/v3/articles?_limit=10`;
-  console.log(pageNo);
+  // console.log(res);
 
   const response = await fetch(url);
   const data = await response.json();
+  console.log(data);
+  
   return {
     props: {
       article: data,
       pageNo: parseInt(pageNo),
     },
-    // revalidate: 360 //should be regenerate every 1 hr
-    // notFound:true
+    // revalidate: 360 //should be regenerate every 1 hr for ISR
+    notFound:(data.error)?true:false //show 404 if directly type wrongpageurl ex page=-0
   };
 }

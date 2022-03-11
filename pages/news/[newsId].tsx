@@ -25,6 +25,7 @@ function NewDetail({ details }: any) {
   return (
     <>
       <div>
+        <p>Detail of NewsId = {details.id}</p>
         <h1>{details.title}</h1>
         <h2>summary</h2>
         <h2>{details.summary}</h2>
