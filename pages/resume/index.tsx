@@ -66,7 +66,7 @@ function Resume() {
           </div>
           <div>
             <button className=" transition-color duration-300 text-xl bg-transparent hover:bg-[#04c2c9] text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent ">
-              View My Work{" "}
+              View My Work
             </button>
           </div>
         </div>
