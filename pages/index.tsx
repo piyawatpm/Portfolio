@@ -6,9 +6,6 @@ import styles from '../styles/Home.module.css'
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
-         <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to Piyawat Resume
@@ -30,12 +27,7 @@ const Home: NextPage = () => {
             <p>Go to News page</p>
           </a>
           </Link>
-          <Link href="/newsClients">
-          <a className={styles.card}>
-            <h2>News</h2>
-            <p>Go to News Clients page</p>
-          </a>
-          </Link>
+          
         </div>
       </main>
 
