@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
-
+import Scrollspy from "react-scrollspy";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -17,41 +17,40 @@ function Navbar() {
                 />
               </div>
               <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4">
-                  <a
-                    href="#aboutme"
-                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                <div className="  ml-10 flex items-baseline space-x-4">
+                  <Scrollspy
+                    items={["sec1","sec2", "sec3", "sec4"]}
+                    currentClassName="is-current"
                   >
-                    Dashboard
-                  </a>
+                    <a
+                      href="#sec1"
+                      className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      Dashboard
+                    </a>
 
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Team
-                  </a>
+                    <a
+                      href="#sec2"
+                      className="  text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      Team
+                    </a>
 
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Projects
-                  </a>
+                    <a
+                      href="#sec3"
+                      className="  text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      Projects
+                    </a>
 
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Calendar
-                  </a>
+                    <a
+                      href="#sec4"
+                      className="  text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      Calendar
+                    </a>
 
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Reports
-                  </a>
+                  </Scrollspy>
                 </div>
               </div>
             </div>
@@ -153,8 +152,6 @@ function Navbar() {
           )}
         </Transition>
       </nav>
-
-     
     </div>
   );
 }
