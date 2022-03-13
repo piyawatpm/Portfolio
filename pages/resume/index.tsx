@@ -5,9 +5,7 @@ import Navbar from "../../components/Navbar";
 function Resume() {
   return (
     <div>
-        
       <section className="relative min-h-screen bg-gray-900 flex flex-col items-center justify-center overflow-hidden">
-    
         <div className=" absolute inset-0 p-2 grid grid-cols-12 gap-2 transform -skew-y-12 scale-150 scroll-py-11">
           {/* background */}
           <div className=" col-span-2 bg-gray-800 rounded hover:opacity-50 "></div>
@@ -57,7 +55,7 @@ function Resume() {
         </div>
         <div id="content" className=" relative text-center">
           <div className="text-5xl font-['Raleway'] text-white text-center py-5">
-            Hello, I'm{" "}
+            Hello, I'm
             <span className="font-['Raleway-semibold'] text-[#04c2c9]">
               Piyawat M.
             </span>
@@ -71,60 +69,56 @@ function Resume() {
           </div>
         </div>
       </section>
-     
+
       <Navbar />
       <section id="about">
-      
         <header className="bg-white shadow">
-        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
-        </div>
-      </header>
-      <main>
-        <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-          {/* <!-- Replace with your content --> */}
-          <div className="px-4 py-6 sm:px-0 h-[1500px]">
-            <div className="border-4 border-dashed border-gray-200 rounded-lg h-[900px]"></div>
+          <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
           </div>
-          {/* <!-- /End replace --> */}
-        </div>
-      </main>
+        </header>
+        <main>
+          <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            {/* <!-- Replace with your content --> */}
+            <div className="px-4 py-6 sm:px-0 h-[1500px]">
+              <div className="border-4 border-dashed border-gray-200 rounded-lg h-[900px]"></div>
+            </div>
+            {/* <!-- /End replace --> */}
+          </div>
+        </main>
       </section>
       <section id="about">
-      
-      <header className="bg-white shadow">
-      <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
-      </div>
-    </header>
-    <main>
-      <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-        {/* <!-- Replace with your content --> */}
-        <div className="px-4 py-6 sm:px-0 h-[1500px]">
-          <div className="border-4 border-dashed border-gray-200 rounded-lg h-[900px]"></div>
-        </div>
-        {/* <!-- /End replace --> */}
-      </div>
-    </main>
-    </section>
-    <section id="about">
-      
-      <header className="bg-white shadow">
-      <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
-      </div>
-    </header>
-    <main>
-      <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-        {/* <!-- Replace with your content --> */}
-        <div className="px-4 py-6 sm:px-0 h-[1500px]">
-          <div className="border-4 border-dashed border-gray-200 rounded-lg h-[900px]"></div>
-        </div>
-        {/* <!-- /End replace --> */}
-      </div>
-    </main>
-    </section>
-    
+        <header className="bg-white shadow">
+          <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
+          </div>
+        </header>
+        <main>
+          <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            {/* <!-- Replace with your content --> */}
+            <div className="px-4 py-6 sm:px-0 h-[1500px]">
+              <div className="border-4 border-dashed border-gray-200 rounded-lg h-[900px]"></div>
+            </div>
+            {/* <!-- /End replace --> */}
+          </div>
+        </main>
+      </section>
+      <section id="about">
+        <header className="bg-white shadow">
+          <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
+          </div>
+        </header>
+        <main>
+          <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            {/* <!-- Replace with your content --> */}
+            <div className="px-4 py-6 sm:px-0 h-[1500px]">
+              <div className="border-4 border-dashed border-gray-200 rounded-lg h-[900px]"></div>
+            </div>
+            {/* <!-- /End replace --> */}
+          </div>
+        </main>
+      </section>
     </div>
   );
 }
