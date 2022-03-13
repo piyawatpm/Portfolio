@@ -55,12 +55,12 @@ function Resume() {
         </div>
         <div id="content" className=" relative text-center">
           <div className="text-5xl font-['Raleway'] text-white text-center py-5">
-            Hello, I'm
+            {"Hello, I'm"}
             <span className="font-['Raleway-semibold'] text-[#04c2c9]">
               Piyawat M.
             </span>
             <br />
-            i'm a front-end web developer
+            {"i'm a front-end web developer"}
           </div>
           <div>
             <button className=" transition-color duration-300 text-xl bg-transparent hover:bg-[#04c2c9] text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent ">
