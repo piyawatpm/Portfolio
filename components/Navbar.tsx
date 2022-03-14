@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import Scrollspy from "react-scrollspy";
+
+type NavbarProps = {};
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className=" sticky top-0 inset-x-0">
       <nav className="bg-gray-800 ">
@@ -19,35 +22,40 @@ function Navbar() {
               <div className="hidden md:block">
                 <div className="  ml-10 flex items-baseline space-x-4">
                   <Scrollspy
-                    items={["sec1", "sec2", "sec3", "sec4"]}
-                    currentClassName="is-current"
+                    offset={-800}
+                    items={["home", "about", "projects", "contact"]}
+                    currentClassName="iscurrent"
                   >
                     <a
-                      href="#sec1"
+                      id="homenav"
+                      href="#home"
                       className="transition duration-700 hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                     >
-                      Dashboard
+                      Home
                     </a>
 
                     <a
-                      href="#sec2"
+                      id="aboutnav"
+                      href="#about"
                       className="  transition duration-700 text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     >
-                      Team
+                      About
                     </a>
 
                     <a
-                      href="#sec3"
+                      id="projectsnav"
+                      href="#projects"
                       className="  transition duration-700 text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     >
                       Projects
                     </a>
 
                     <a
-                      href="#sec4"
+                      id="contactnav"
+                      href="#contact"
                       className="  transition duration-700 text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     >
-                      Calendar
+                      Contract
                     </a>
                   </Scrollspy>
                 </div>

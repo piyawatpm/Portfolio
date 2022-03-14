@@ -1,13 +1,33 @@
 import { useRouter } from "next/router";
 import React from "react";
+import { useRef } from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 import Navbar from "../../components/Navbar";
 import DownArrow from "../../src/image/down-arrow.svg";
 function Resume() {
+  const [aboutAnimate, setAboutAnimate] = useState(false);
+
+  useEffect(() => {
+    const listener = () => {
+      // if (about.current?.classList.contains("is-current")) console.log("Test");
+      // else
+      document.getElementById("aboutnav")?.classList.contains("iscurrent")
+        ? setAboutAnimate(true)
+        : setAboutAnimate(false);
+    };
+    document.addEventListener("scroll", listener);
+
+    return () => {
+      window.removeEventListener("scroll", listener);
+    };
+  }, []);
+
   return (
     <div>
       <section
-        id="sec1"
-        className="  relative min-h-screen bg-gray-900 flex flex-col items-center justify-center overflow-hidden"
+        id="home"
+        className="relative min-h-screen bg-gray-900 flex flex-col items-center justify-center overflow-hidden"
       >
         {/* scroll-mt-12 */}
         <div className=" absolute inset-0 p-2 grid grid-cols-12 gap-2 transform -skew-y-12 scale-150 scroll-py-11">
@@ -68,7 +88,7 @@ function Resume() {
           </div>
 
           <a
-            href="#sec2"
+            href="#about"
             className="  group max-w-fit cursor-pointer transition-color duration-500 text-lg bg-transparent hover:bg-[#04c2c9] text-white  hover:text-white p-[14px] border border-white hover:border-transparent my-5"
           >
             View My Work
@@ -91,14 +111,21 @@ function Resume() {
       </section>
 
       <Navbar />
-      <section id="sec2" className=" bg-white pt-[80px] items-center justify-center text-center">
+      <section
+        id="about"
+        className=" bg-white pt-[80px] items-center justify-center text-center"
+      >
         <div className="h-[900px]">
-          <div className=" animate-slideInLeft font-Raleway-Bold text-[30pt] text-[#444649]">
+          <div
+            className={`  opacity-0 ${
+              aboutAnimate && "animate-slideInLeft"
+            } font-Raleway-Bold text-[30pt] text-[#444649]`}
+          >
             ABOUT
           </div>
         </div>
       </section>
-      <section id="sec3" className=" bg-green-400">
+      <section id="projects" className=" bg-green-400">
         <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
           {/* <!-- Replace with your content --> */}
           <div className="px-4 py-6 sm:px-0 h-[1500px]">
@@ -107,7 +134,7 @@ function Resume() {
           {/* <!-- /End replace --> */}
         </div>
       </section>
-      <section id="sec4" className=" bg-blue-500">
+      <section id="contact" className=" bg-blue-500">
         <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
           {/* <!-- Replace with your content --> */}
           <div className="px-4 py-6 sm:px-0 h-[1500px]">
