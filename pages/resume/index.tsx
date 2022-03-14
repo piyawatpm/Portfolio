@@ -60,7 +60,9 @@ function Resume() {
         <div id="content" className=" relative text-center">
           <div className=" font-Raleway text-5xl text-white text-center py-10">
             {"Hello, I'm "}
-            <span className="  font-Raleway-Bold text-[#04c2c9]">Piyawat M.</span>
+            <span className="  font-Raleway-Bold text-[#04c2c9]">
+              Piyawat M.
+            </span>
             <br />
             {"I'm a front-end web developer"}
           </div>
@@ -89,13 +91,11 @@ function Resume() {
       </section>
 
       <Navbar />
-      <section id="sec2" className=" bg-red-600">
-        <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-          {/* <!-- Replace with your content --> */}
-          <div className="px-4 py-6 sm:px-0 h-[1500px]">
-            <div className="border-4 border-dashed border-gray-200 rounded-lg h-[900px]"></div>
+      <section id="sec2" className=" bg-white pt-[80px] items-center justify-center text-center">
+        <div className="h-[900px]">
+          <div className=" animate-slideInLeft font-Raleway-Bold text-[30pt] text-[#444649]">
+            ABOUT
           </div>
-          {/* <!-- /End replace --> */}
         </div>
       </section>
       <section id="sec3" className=" bg-green-400">

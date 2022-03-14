@@ -16,9 +16,14 @@ module.exports = {
           "0%": { transform: "rotate(270deg)" },
           "100%": { transform: "rotate(360deg)" },
         },
+        slideInLeft: {
+          "0%": { opacity: "0", transform: "translateX(-300px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
       },
       animation: {
         transformArrow: "transformArrow 0.5s",
+        slideInLeft: "slideInLeft 0.75s ease both",
       },
     },
   },
