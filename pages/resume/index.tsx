@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import React from "react";
 import Navbar from "../../components/Navbar";
-
+import DownArrow from "../../src/image/down-arrow.svg";
 function Resume() {
   return (
     <div>
@@ -58,19 +58,33 @@ function Resume() {
           <div className=" col-span-4 bg-gray-800 rounded hover:opacity-50 "></div>
         </div>
         <div id="content" className=" relative text-center">
-          <div className="text-5xl font-['Raleway'] text-white text-center py-5">
-            {"Hello, I'm"}
-            <span className="font-['Raleway-semibold'] text-[#04c2c9]">
-              Piyawat M.
-            </span>
+          <div className=" font-Raleway text-5xl text-white text-center py-10">
+            {"Hello, I'm "}
+            <span className="  font-Raleway-Bold text-[#04c2c9]">Piyawat M.</span>
             <br />
-            {"i'm a front-end web developer"}
+            {"I'm a front-end web developer"}
           </div>
-          <div>
-            <button className=" transition-color duration-300 text-xl bg-transparent hover:bg-[#04c2c9] text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent ">
-              View My Work
-            </button>
-          </div>
+
+          <a
+            href="#sec2"
+            className="  group max-w-fit cursor-pointer transition-color duration-500 text-lg bg-transparent hover:bg-[#04c2c9] text-white  hover:text-white p-[14px] border border-white hover:border-transparent my-5"
+          >
+            View My Work
+            <svg
+              className="w-6 h-6 dark:text-white rotate-[270deg]  inline mx-2  mb-1  group-hover:rotate-[360deg] transform transition duration-500 scale-75 bold"
+              fill="none"
+              stroke="currentColor"
+              viewBox="1 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"
+              ></path>
+            </svg>
+          </a>
         </div>
       </section>
 
