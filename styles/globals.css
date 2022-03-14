@@ -15,7 +15,7 @@ html {
 .is-current {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-  animation: fadeIn 2s;
+  /* animation: fadeIn 2s; */
 }
 @keyframes fadeIn {
     0% {opacity:0.8;}
