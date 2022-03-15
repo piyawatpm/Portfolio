@@ -20,10 +20,15 @@ module.exports = {
           "0%": { opacity: "0", transform: "translateX(-300px)" },
           "100%": { opacity: "1", transform: "translateX(0)" },
         },
+        slideInRight: {
+          "0%": { opacity: "0", transform: "translateX(300px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
       },
       animation: {
         transformArrow: "transformArrow 0.5s",
         slideInLeft: "slideInLeft 0.75s ease both",
+        slideInRight: "slideInRight 0.75s ease both"
       },
     },
   },

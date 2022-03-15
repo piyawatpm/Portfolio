@@ -7,7 +7,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className=" sticky top-0 inset-x-0">
+    <div className=" sticky top-0 inset-x-0 z-50">
       <nav className="bg-gray-800 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
@@ -22,7 +22,7 @@ function Navbar() {
               <div className="hidden md:block">
                 <div className="  ml-10 flex items-baseline space-x-4">
                   <Scrollspy
-                    offset={-800}
+                    offset={-750}
                     items={["home", "about", "projects", "contact"]}
                     currentClassName="iscurrent"
                   >

@@ -3,11 +3,12 @@ import React from "react";
 import { useRef } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
+import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
-import DownArrow from "../../src/image/down-arrow.svg";
 function Resume() {
   const [aboutAnimate, setAboutAnimate] = useState(false);
-
+  const [projectsAnimate, setProjectsAnimate] = useState(false);
+  const [contactAnimate, setContactAnimate] = useState(false);
   useEffect(() => {
     const listener = () => {
       // if (about.current?.classList.contains("is-current")) console.log("Test");
@@ -15,8 +16,15 @@ function Resume() {
       document.getElementById("aboutnav")?.classList.contains("iscurrent")
         ? setAboutAnimate(true)
         : setAboutAnimate(false);
+      document.getElementById("projectsnav")?.classList.contains("iscurrent")
+        ? setProjectsAnimate(true)
+        : setProjectsAnimate(false);
+      document.getElementById("contactnav")?.classList.contains("iscurrent") ||
+      window.innerHeight + window.scrollY >= document.body.offsetHeight - 100
+        ? setContactAnimate(true)
+        : setContactAnimate(false);
     };
-    document.addEventListener("scroll", listener);
+    document.addEventListener("scroll", listener, { passive: true });
 
     return () => {
       window.removeEventListener("scroll", listener);
@@ -89,7 +97,7 @@ function Resume() {
 
           <a
             href="#about"
-            className="  group max-w-fit cursor-pointer transition-color duration-500 text-lg bg-transparent hover:bg-[#04c2c9] text-white  hover:text-white p-[14px] border border-white hover:border-transparent my-5"
+            className="  group max-w-fit cursor-pointer transition-color duration-500 text-lg bg-transparent hover:bg-[#04c2c9] text-white  hover:text-white p-[14px] border-2 border-solid border-[#fff] hover:border-transparent my-5"
           >
             View My Work
             <svg
@@ -111,38 +119,65 @@ function Resume() {
       </section>
 
       <Navbar />
-      <section
-        id="about"
-        className=" bg-white pt-[80px] items-center justify-center text-center"
-      >
-        <div className="h-[900px]">
+      <section id="about" className="  bg-yellow-100 pt-[80px] ">
+        <div className="h-[900px] flex-col flex items-center text-center max-w-[1200px] m-auto w-full">
           <div
-            className={`  opacity-0 ${
+            className={`opacity-0 ${
               aboutAnimate && "animate-slideInLeft"
             } font-Raleway-Bold text-[30pt] text-[#444649]`}
           >
             ABOUT
           </div>
+
+          <div
+            className={` ${
+              aboutAnimate && "animate-slideInLeft"
+            } opacity-0 bg-[#444649] h-1 w-[70px] mt-1 delay50`}
+          ></div>
         </div>
       </section>
-      <section id="projects" className=" bg-green-400">
-        <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-          {/* <!-- Replace with your content --> */}
-          <div className="px-4 py-6 sm:px-0 h-[1500px]">
-            <div className="border-4 border-dashed border-gray-200 rounded-lg h-[900px]"></div>
+      <section id="projects" className=" bg-white pt-[80px]">
+        <div className="h-[900px] flex-col flex items-center text-center max-w-[1200px] m-auto w-full">
+          <div
+            className={`  opacity-0 ${
+              projectsAnimate && "animate-slideInLeft"
+            } font-Raleway-Bold text-[30pt] text-[#444649]`}
+          >
+            PROJECTS
           </div>
-          {/* <!-- /End replace --> */}
+
+          <div
+            className={` ${
+              projectsAnimate && "animate-slideInLeft"
+            } opacity-0 bg-[#444649] h-1 w-[70px] mt-1 delay-line`}
+          ></div>
         </div>
       </section>
-      <section id="contact" className=" bg-blue-500">
-        <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-          {/* <!-- Replace with your content --> */}
-          <div className="px-4 py-6 sm:px-0 h-[1500px]">
-            <div className="border-4 border-dashed border-gray-200 rounded-lg h-[900px]"></div>
+      <section id="contact" className=" bg-[#252934] pt-[80px] pb-[249px]">
+        <div className=" flex-col flex items-center text-center relative m-auto w-full">
+          <div
+            className={`  opacity-0 ${
+              contactAnimate && "animate-slideInLeft"
+            } font-Raleway-Bold text-[30pt] text-white`}
+          >
+            CONTACT
           </div>
-          {/* <!-- /End replace --> */}
+          <div
+            className={`${
+              contactAnimate && "animate-slideInRight"
+            } opacity-0 bg-white h-1 w-[70px] mt-[25px] mb-[40px] delay25`}
+          ></div>
+          <h1
+            className={`${
+              contactAnimate && "animate-slideInRight"
+            } text-[#04c2c9] font-bold text-base delay50`}
+          >
+            Have a question or want to work together?
+          </h1>
+          <div className=" mx-auto mt-[40px] bg-black w-[500px] h-[240px]"></div>
         </div>
       </section>
+      <Footer></Footer>
     </div>
   );
 }

@@ -25,3 +25,9 @@ html {
     opacity: 1;
   }
 }
+.delay25{
+  animation-delay: 0.25s;
+}
+.delay50{
+  animation-delay: 0.5s;
+}
