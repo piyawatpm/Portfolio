@@ -5,8 +5,10 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
+import ProjectsWrap from "../../components/ProjectsWrap";
 function Resume() {
   const [aboutAnimate, setAboutAnimate] = useState(false);
+  const [EducationAnimate, setEducationAnimate] = useState(false);
   const [projectsAnimate, setProjectsAnimate] = useState(false);
   const [contactAnimate, setContactAnimate] = useState(false);
   useEffect(() => {
@@ -16,6 +18,9 @@ function Resume() {
       document.getElementById("aboutnav")?.classList.contains("iscurrent")
         ? setAboutAnimate(true)
         : setAboutAnimate(false);
+      document.getElementById("educationnav")?.classList.contains("iscurrent")
+        ? setEducationAnimate(true)
+        : setEducationAnimate(false);
       document.getElementById("projectsnav")?.classList.contains("iscurrent")
         ? setProjectsAnimate(true)
         : setProjectsAnimate(false);
@@ -136,36 +141,55 @@ function Resume() {
           ></div>
         </div>
       </section>
-      <section id="projects" className=" bg-white pt-[80px]">
+      <section id="education" className="  bg-red-200 pt-[80px] ">
         <div className="h-[900px] flex-col flex items-center text-center max-w-[1200px] m-auto w-full">
           <div
-            className={`  opacity-0 ${
-              projectsAnimate && "animate-slideInLeft"
+            className={`opacity-0 ${
+              EducationAnimate && "animate-slideInLeft"
             } font-Raleway-Bold text-[30pt] text-[#444649]`}
           >
-            PROJECTS
+            EDUCATION
           </div>
 
           <div
             className={` ${
-              projectsAnimate && "animate-slideInLeft"
-            } opacity-0 bg-[#444649] h-1 w-[70px] mt-1 delay-line`}
+              EducationAnimate && "animate-slideInLeft"
+            } opacity-0 bg-[#444649] h-1 w-[70px] mt-1 delay50`}
           ></div>
         </div>
       </section>
-      <section id="contact" className=" bg-[#252934]  pb-[249px]">
+      <section id="projects" className=" bg-white pt-[80px]">
+        <div className="h-[900px] flex-col flex items-center text-center max-w-[1200px] m-auto w-full">
+          <div
+            className={`  opacity-0 ${
+              projectsAnimate && " animate-slideInRight"
+            } font-Raleway-Bold text-[30pt] text-[#444649]`}
+          >
+            PROJECTS
+          </div>
+            
+          <div
+            className={` ${
+              projectsAnimate && "animate-slideInRight"
+            } delay50 opacity-0 bg-[#444649] h-1 w-[70px] mt-1 delay-line mb-24`}
+          ></div>
+          <ProjectsWrap />
+        </div>
+      </section>
+      <section id="contact" className=" bg-[#252934]  pb-[200px] ">
         <svg
-        preserveAspectRatio="none"
-        viewBox="0 0 100 102"
+          preserveAspectRatio="none"
+          viewBox="0 0 100 102"
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
-          className="svgcolor-light bt-[#252934] text-white mb-5"
+          className="svgcolor-light bt-[#252934] text-white mb-32"
           width="100%"
           height="75"
         >
           <path d="M 0 0 L 50 100 L 100 0 Z" fill="white" stroke="white" />
         </svg>
-        <div className=" flex-col flex items-center text-center relative m-auto w-full">
+
+        <div className=" mt-7 flex-col flex items-center text-center relative  w-full">
           <div
             className={`  opacity-0 ${
               contactAnimate && "animate-slideInLeft"

@@ -23,7 +23,7 @@ function Navbar() {
                 <div className="  ml-10 flex items-baseline space-x-4">
                   <Scrollspy
                     offset={-750}
-                    items={["home", "about", "projects", "contact"]}
+                    items={["home", "about","education", "projects", "contact"]}
                     currentClassName="iscurrent"
                   >
                     <a
@@ -40,6 +40,13 @@ function Navbar() {
                       className="  transition duration-700 text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     >
                       About
+                    </a>
+                    <a
+                      id="educationnav"
+                      href="#education"
+                      className="  transition duration-700 text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      Education
                     </a>
 
                     <a

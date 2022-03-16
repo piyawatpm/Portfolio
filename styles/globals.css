@@ -31,3 +31,6 @@ html {
 .delay50{
   animation-delay: 0.5s;
 }
+.active{
+  color: black;
+}
