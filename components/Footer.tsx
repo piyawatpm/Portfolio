@@ -6,6 +6,7 @@ import {
   FaGithub,
 } from "react-icons/fa";
 function Footer() {
+  
   return (
     <footer className="bg-[#1b242f] pt-[70px] pb-[50px]">
       <div className=" flex flex-row items-center justify-center">

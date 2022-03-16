@@ -6,9 +6,10 @@ import { useEffect } from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import ProjectsWrap from "../../components/ProjectsWrap";
+import Timeline from "../../components/Timeline";
 function Resume() {
   const [aboutAnimate, setAboutAnimate] = useState(false);
-  const [EducationAnimate, setEducationAnimate] = useState(false);
+  const [timeLineAnimate, setTimeLineAnimate] = useState(false);
   const [projectsAnimate, setProjectsAnimate] = useState(false);
   const [contactAnimate, setContactAnimate] = useState(false);
   useEffect(() => {
@@ -18,9 +19,9 @@ function Resume() {
       document.getElementById("aboutnav")?.classList.contains("iscurrent")
         ? setAboutAnimate(true)
         : setAboutAnimate(false);
-      document.getElementById("educationnav")?.classList.contains("iscurrent")
-        ? setEducationAnimate(true)
-        : setEducationAnimate(false);
+      document.getElementById("timelinenav")?.classList.contains("iscurrent")
+        ? setTimeLineAnimate(true)
+        : setTimeLineAnimate(false);
       document.getElementById("projectsnav")?.classList.contains("iscurrent")
         ? setProjectsAnimate(true)
         : setProjectsAnimate(false);
@@ -42,7 +43,6 @@ function Resume() {
         id="home"
         className="relative min-h-screen bg-gray-900 flex flex-col items-center justify-center overflow-hidden"
       >
-        {/* scroll-mt-12 */}
         <div className=" absolute inset-0 p-2 grid grid-cols-12 gap-2 transform -skew-y-12 scale-150 scroll-py-11">
           {/* background */}
           <div className=" col-span-2 bg-gray-800 rounded hover:opacity-50 "></div>
@@ -141,21 +141,23 @@ function Resume() {
           ></div>
         </div>
       </section>
-      <section id="education" className="  bg-red-200 pt-[80px] ">
-        <div className="h-[900px] flex-col flex items-center text-center max-w-[1200px] m-auto w-full">
+      <section id="timeline" className="  bg-[#f6f9fc] pt-[80px] ">
+        <div className=" flex-col flex items-center text-center max-w-[1200px] m-auto w-full">
           <div
             className={`opacity-0 ${
-              EducationAnimate && "animate-slideInLeft"
+              timeLineAnimate && "animate-slideInLeft"
             } font-Raleway-Bold text-[30pt] text-[#444649]`}
           >
-            EDUCATION
+            TIMELINE
           </div>
 
           <div
             className={` ${
-              EducationAnimate && "animate-slideInLeft"
+              timeLineAnimate && "animate-slideInLeft"
             } opacity-0 bg-[#444649] h-1 w-[70px] mt-1 delay50`}
           ></div>
+          
+          <Timeline />
         </div>
       </section>
       <section id="projects" className=" bg-white pt-[80px]">
@@ -167,7 +169,7 @@ function Resume() {
           >
             PROJECTS
           </div>
-            
+
           <div
             className={` ${
               projectsAnimate && "animate-slideInRight"
@@ -209,10 +211,7 @@ function Resume() {
           >
             Have a question or want to work together?
           </h1>
-          {/* <div className=" mx-auto mt-[40px] bg-black w-[500px] h-[240px]">
 
-
-          </div> */}
           <div
             className={`${
               contactAnimate && " animate-popIn"

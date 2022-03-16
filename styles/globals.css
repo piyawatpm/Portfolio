@@ -25,12 +25,22 @@ html {
     opacity: 1;
   }
 }
-.delay25{
+.delay25 {
   animation-delay: 0.25s;
 }
-.delay50{
+.delay50 {
   animation-delay: 0.5s;
 }
-.active{
+.delay100 {
+  animation-delay: 1s;
+}
+.active {
   color: black;
+}
+.boxshadow {
+  box-shadow: 0 30px 60px -12px rgb(50 50 93 / 25%),
+    0 18px 36px -18px rgb(0 0 0 / 30%), 0 -12px 36px -8px rgb(0 0 0 / 3%);
+}
+.bordericon{
+  border-radius: 8px 0 0 8px;
 }
