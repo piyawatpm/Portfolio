@@ -56,9 +56,7 @@ html {
   animation-delay: 2.80s;
 }
 
-.active {
-  color: black;
-}
+
 .boxshadow {
   box-shadow: 0 30px 60px -12px rgb(50 50 93 / 25%),
     0 18px 36px -18px rgb(0 0 0 / 30%), 0 -12px 36px -8px rgb(0 0 0 / 3%);

@@ -3,6 +3,7 @@ import React from "react";
 import { useRef } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
+import About from "../../components/About";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import ProjectsWrap from "../../components/ProjectsWrap";
@@ -140,6 +141,7 @@ function Resume() {
               aboutAnimate && "animate-slideInLeft"
             } opacity-0 bg-[#444649] h-1 w-[70px] mt-1 delay50`}
           ></div>
+          <About />
         </div>
       </section>
       <section id="timeline" className="  bg-[#f6f9fc] pt-[80px] ">
