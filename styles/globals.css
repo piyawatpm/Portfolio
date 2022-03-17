@@ -31,9 +31,31 @@ html {
 .delay50 {
   animation-delay: 0.5s;
 }
+.delay75 {
+  animation-delay: 0.75s;
+}
 .delay100 {
   animation-delay: 1s;
 }
+.delay125 {
+  animation-delay: 1.25s;
+}
+.delay140 {
+  animation-delay: 1.4s;
+}
+.delay170{
+  animation-delay: 1.7s;
+}
+.delay210{
+  animation-delay: 2.10s;
+}
+.delay240{
+  animation-delay: 2.40s;
+}
+.delay280{
+  animation-delay: 2.80s;
+}
+
 .active {
   color: black;
 }

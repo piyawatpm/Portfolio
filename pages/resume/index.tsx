@@ -12,6 +12,7 @@ function Resume() {
   const [timeLineAnimate, setTimeLineAnimate] = useState(false);
   const [projectsAnimate, setProjectsAnimate] = useState(false);
   const [contactAnimate, setContactAnimate] = useState(false);
+  console.log(timeLineAnimate);
   useEffect(() => {
     const listener = () => {
       // if (about.current?.classList.contains("is-current")) console.log("Test");
@@ -156,8 +157,8 @@ function Resume() {
               timeLineAnimate && "animate-slideInLeft"
             } opacity-0 bg-[#444649] h-1 w-[70px] mt-1 delay50`}
           ></div>
-          
-          <Timeline />
+
+          <Timeline timeLineAnimate = {timeLineAnimate} />
         </div>
       </section>
       <section id="projects" className=" bg-white pt-[80px]">

@@ -32,16 +32,17 @@ module.exports = {
         },
         lineMoving: {
           "0%": { height: "0px" },
-          "100%": { height: "200px" },
+          "100%": { height: "166px" },
         },
         fadeInDown: {
           "0%": { opacity: 0, transform: "translate3d(0, -20%, 0)" },
           "100%": { opacity: 1, transform: "translate3d(0, 0, 0)" },
         },
-        fadeInart: {
-          "0%": { opacity: 0, transform: "translate3d(0, 0, 0)" },
+        fadeInUp: {
+          "0%": { opacity: 0, transform: "translate3d(0, 20%, 0)" },
           "100%": { opacity: 1, transform: "translate3d(0, 0, 0)" },
         },
+   
       },
 
       animation: {
@@ -49,9 +50,9 @@ module.exports = {
         slideInLeft: "slideInLeft 0.75s ease both",
         slideInRight: "slideInRight 0.75s ease both",
         popIn: "popIn 1s both",
-        lineMoving: "lineMoving 1.25s linear forwards",
-        fadeInDown: "fadeInDown 0.5s ease-in both",
-        fadeInart: "fadeInart 0.25s ease-in both",
+        lineMoving: "lineMoving 0.6s linear forwards",
+        fadeInDown: "fadeInDown 0.3s ease-in both",
+        fadeInUp: "fadeInUp 0.3s ease-in both",
       },
     },
   },
