@@ -40,11 +40,17 @@ html {
 .delay125 {
   animation-delay: 1.25s;
 }
+.delay150 {
+  animation-delay: 1.50s;
+}
 .delay140 {
   animation-delay: 1.4s;
 }
 .delay170{
   animation-delay: 1.7s;
+}
+.delay175{
+  animation-delay: 1.75s;
 }
 .delay210{
   animation-delay: 2.10s;
@@ -63,4 +69,60 @@ html {
 }
 .bordericon{
   border-radius: 8px 0 0 8px;
+}
+
+.image-wrapper {
+  width: 537px;
+  height: 550px;
+  position: relative;
+  margin: 64px auto;
+}
+.image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+}
+.image-1 {
+  clip-path: polygon(0 0, 0 32%, 28% 0);
+  transform: translate(-10px, -10px);
+  transition: transform 300ms ease;
+  transform-origin: top;
+  filter: blur(8px);
+}
+.image-wrapper:hover .image-1 {
+  transform: translate(0, 0);
+  filter: none;
+}
+.image-2 {
+  clip-path: polygon(28% 0, 0 32%, 0 100%, 17% 100%, 90% 0);
+  transform: translate(-30px, 5px);
+  transition: transform 300ms ease;
+
+  filter: blur(8px);
+}
+.image-wrapper:hover .image-2 {
+  transform: translate(0, 0);
+  filter: none;
+}
+.image-3 {
+  clip-path: polygon(100% 0, 100% 65%, 74% 100%, 17% 100%, 90% 0);
+  transform: translate(-15px, -10px);
+  transition: transform 300ms ease;
+  filter: blur(8px);
+}
+.image-wrapper:hover .image-3 {
+  transform: translate(0, 0);
+  filter: none;
+}
+.image-4 {
+  clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
+  transform: translate(-32px, 5px);
+  transition: transform 300ms ease;
+  transform-origin: top;
+  filter: blur(8px);
+}
+.image-wrapper:hover .image-4 {
+  transform: translate(0, 0);
+  filter: none;
 }

@@ -126,8 +126,8 @@ function Resume() {
       </section>
 
       <Navbar />
-      <section id="about" className="  bg-yellow-100 pt-[80px] ">
-        <div className="h-[900px] flex-col flex items-center text-center max-w-[1200px] m-auto w-full">
+      <section id="about" className="   py-[80px] ">
+        <div className=" flex-col flex items-center text-center max-w-[1200px]  m-auto w-full">
           <div
             className={`opacity-0 ${
               aboutAnimate && "animate-slideInLeft"
@@ -141,7 +141,7 @@ function Resume() {
               aboutAnimate && "animate-slideInLeft"
             } opacity-0 bg-[#444649] h-1 w-[70px] mt-1 delay50`}
           ></div>
-          <About />
+          <About  aboutAnimate />
         </div>
       </section>
       <section id="timeline" className="  bg-[#f6f9fc] pt-[80px] ">
