@@ -70,14 +70,10 @@ html {
 .bordericon{
   border-radius: 8px 0 0 8px;
 }
-
-.image-wrapper {
-  width: 537px;
-  height: 550px;
-  position: relative;
-  margin: 64px auto;
-  
-}
+/* /CSS3_logo_and_wordmark.svg */
+/* /Unofficial_JavaScript_logo_2.svg */
+/* /React-icon.svg */
+/* /Nextjs-logo.svg */
 .image-wrapper img {
   position: absolute;
   top: 0;

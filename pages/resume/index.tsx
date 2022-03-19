@@ -93,7 +93,7 @@ function Resume() {
           <div className=" col-span-4 bg-gray-800 rounded hover:opacity-50 "></div>
         </div>
         <div id="content" className=" relative text-center">
-          <div className=" font-Raleway text-5xl text-white text-center py-10">
+          <div className=" font-Raleway text-2xl sm:text-5xl text-white text-center py-10">
             {"Hello, I'm "}
             <span className="  font-Raleway-Bold text-[#04c2c9]">
               Piyawat M.
@@ -104,7 +104,7 @@ function Resume() {
 
           <a
             href="#about"
-            className="  group max-w-fit cursor-pointer transition-color duration-500 text-lg bg-transparent hover:bg-[#04c2c9] text-white  hover:text-white p-[14px] border-2 border-solid border-[#fff] hover:border-transparent my-5"
+            className="  group max-w-fit cursor-pointer transition-color duration-500 text-base sm:text-lg bg-transparent hover:bg-[#04c2c9] text-white  hover:text-white p-[14px] border-2 border-solid border-[#fff] hover:border-transparent my-5"
           >
             View My Work
             <svg
@@ -124,14 +124,13 @@ function Resume() {
           </a>
         </div>
       </section>
-
       <Navbar />
       <section id="about" className="   py-[80px] ">
-        <div className=" flex-col flex items-center text-center max-w-[1200px]  m-auto w-full">
+        <div className=" flex-col flex items-center text-center md:max-w-[1200px]  m-auto w-full">
           <div
             className={`opacity-0 ${
               aboutAnimate && "animate-slideInLeft"
-            } font-Raleway-Bold text-[30pt] text-[#444649]`}
+            } font-Raleway-Bold text-3xl md:text-4xl text-[#444649]`}
           >
             ABOUT
           </div>
@@ -145,11 +144,11 @@ function Resume() {
         </div>
       </section>
       <section id="timeline" className="  bg-[#f6f9fc] pt-[80px] ">
-        <div className=" flex-col flex items-center text-center max-w-[1200px] m-auto w-full">
+        <div className=" flex-col flex items-center text-center md:max-w-[1200px] m-auto w-full">
           <div
             className={`opacity-0 ${
               timeLineAnimate && "animate-slideInLeft"
-            } font-Raleway-Bold text-[30pt] text-[#444649]`}
+            } font-Raleway-Bold text-3xl md:text-4xl text-[#444649]`}
           >
             TIMELINE
           </div>
@@ -163,12 +162,12 @@ function Resume() {
           <Timeline timeLineAnimate = {timeLineAnimate} />
         </div>
       </section>
-      <section id="projects" className=" bg-white pt-[80px]">
+      {/* <section id="projects" className=" bg-white pt-[80px]">
         <div className="h-[900px] flex-col flex items-center text-center max-w-[1200px] m-auto w-full">
           <div
             className={`  opacity-0 ${
               projectsAnimate && " animate-slideInRight"
-            } font-Raleway-Bold text-[30pt] text-[#444649]`}
+            } font-Raleway-Bold text-3xl md:text-4xl text-[#444649]`}
           >
             PROJECTS
           </div>
@@ -198,7 +197,7 @@ function Resume() {
           <div
             className={`  opacity-0 ${
               contactAnimate && "animate-slideInLeft"
-            } font-Raleway-Bold text-[30pt] text-white`}
+            } font-Raleway-Bold text-3xl md:text-4xl text-white`}
           >
             CONTACT
           </div>
@@ -244,7 +243,7 @@ function Resume() {
           </div>
         </div>
       </section>
-      <Footer></Footer>
+      <Footer></Footer> */}
     </div>
   );
 }
