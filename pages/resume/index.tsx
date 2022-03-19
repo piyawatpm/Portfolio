@@ -143,7 +143,7 @@ function Resume() {
           <About  aboutAnimate = {aboutAnimate}/>
         </div>
       </section>
-      {/* <section id="timeline" className="  bg-[#f6f9fc] pt-[80px] ">
+      <section id="timeline" className="  bg-[#f6f9fc] pt-[80px] ">
         <div className=" flex-col flex items-center text-center md:max-w-[1200px] m-auto w-full">
           <div
             className={`opacity-0 ${
@@ -161,7 +161,7 @@ function Resume() {
 
           <Timeline timeLineAnimate = {timeLineAnimate} />
         </div>
-      </section> */}
+      </section>
       {/* <section id="projects" className=" bg-white pt-[80px]">
         <div className="h-[900px] flex-col flex items-center text-center max-w-[1200px] m-auto w-full">
           <div

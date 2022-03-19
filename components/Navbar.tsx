@@ -68,6 +68,9 @@ function Navbar() {
                 </div>
               </div>
             </div>
+
+            {/* mobilenavbar */}
+            
             <div className="-mr-2 flex md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}

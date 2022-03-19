@@ -1,13 +1,13 @@
 import React from "react";
-import { FaBirthdayCake ,FaSchool ,FaReact ,FaSearch} from "react-icons/fa";
-import {IoMdSchool} from "react-icons/io"
+import { FaBirthdayCake, FaSchool, FaReact, FaSearch } from "react-icons/fa";
+import { IoMdSchool } from "react-icons/io";
 
 type TimeLineProps = {
   timeLineAnimate: boolean;
 };
 function Timeline({ timeLineAnimate }: TimeLineProps) {
   return (
-    <div className="flex flex-col w-[50vw] mx-auto my-[5%]">
+    <div className="flex flex-col md:w-[50vw] mx-auto my-[5%]">
       <div
         className={`${
           timeLineAnimate && "animate-fadeInDown"
@@ -15,11 +15,11 @@ function Timeline({ timeLineAnimate }: TimeLineProps) {
         boxshadow`}
       >
         <div className=" rounded-l-xl bg-[#9251ac] flex items-center justify-center text-4xl text-[#9251ac] p-5">
-          <FaSchool className="  z-10 bg-[#f6a4ec]  p-[7px]  rounded-full  border-[#9251ac] border-solid border-[1px] scale-[1.75]  absolute  left-[-65px] text-4xl " />
+          <FaSchool className=" hidden md:block  z-10 bg-[#f6a4ec]  p-[7px]  rounded-full  border-[#9251ac] border-solid border-[1px] scale-[1.75]  absolute  left-[-65px] text-4xl " />
           <div
             className={`${
               timeLineAnimate && "animate-lineMoving"
-            } delay100  translate-y-7 opacity-40 w-[2px] h-0 bg-[#9251ac]  absolute left-[-48px] top-[50%] `}
+            } delay100 hidden md:block  translat hidden md:blocke-y-7 opacity-40 w-[2px] h-0 bg-[#9251ac]  absolute left-[-48px] top-[50%] `}
           ></div>
           <div className=" rounded-lg text-[#f6a4ec] font-semibold text-2xl flex-nowrap">
             2017
@@ -51,7 +51,7 @@ function Timeline({ timeLineAnimate }: TimeLineProps) {
           <div
             className={`${
               timeLineAnimate && "animate-lineMoving"
-            } delay170  translate-y-7 opacity-40 w-[2px] h-0 bg-[#24b47e] absolute left-[-48px] top-[50%] `}
+            } delay170  translate-y-7 opacity-40 hidden md:block w-[2px] h-0 bg-[#24b47e] absolute left-[-48px] top-[50%] `}
           ></div>
           <div className=" rounded-lg text-[#aff1b6] font-semibold text-2xl flex-nowrap">
             2021
@@ -83,7 +83,7 @@ function Timeline({ timeLineAnimate }: TimeLineProps) {
           <div
             className={`${
               timeLineAnimate && "animate-lineMoving"
-            } delay240  translate-y-7 opacity-40 w-[2px] h-0 bg-[#555ac0] absolute left-[-48px] top-[50%] `}
+            } delay240  translate-y-7 opacity-40 hidden md:block w-[2px] h-0 bg-[#555ac0] absolute left-[-48px] top-[50%] `}
           ></div>
           <div className=" rounded-lg text-[#87bbfe] font-semibold text-2xl flex-nowrap">
             2021
@@ -112,18 +112,14 @@ function Timeline({ timeLineAnimate }: TimeLineProps) {
       >
         <div className=" rounded-l-xl bg-[#9251ac] flex items-center justify-center text-4xl text-[#9251ac] p-5">
           <FaSearch className="  z-10 bg-[#f6a4ec]  p-[7px]  rounded-full  border-[#9251ac] border-solid border-[1px] scale-[1.75]  absolute  left-[-65px] text-4xl " />
-          {/* <div
-            className={`${
-              timeLineAnimate && "animate-lineMoving"
-            } delay385  translate-y-7 opacity-40 w-[2px] h-0 bg-black absolute left-[-48px] top-[50%] `}
-          ></div> */}
+
           <div className=" rounded-lg text-[#f6a4ec] font-semibold text-2xl flex-nowrap">
             2022
           </div>
         </div>
         <div className=" text-left p-5">
           <div className=" text-2xl leading-6 uppercase font-semibold text-[#9251ac] tracking-wide">
-            LOOING FOR JOB
+            LOOKING FOR JOB
           </div>
           <div className=" text-left basis-3/5 text-base mt-1">
             <p>
