@@ -20,7 +20,7 @@ function Navbar() {
                 />
               </div>
               <div className="hidden md:block">
-                <div className="  ml-10 flex items-baseline space-x-4">
+                <div className=" ml-10 flex items-baseline space-x-4">
                   <Scrollspy
                     offset={-500}
                     items={["home", "about", "timeline", "projects", "contact"]}

@@ -6,10 +6,9 @@ import {
   FaGithub,
 } from "react-icons/fa";
 function Footer() {
-  
   return (
     <footer className="bg-[#1b242f] pt-[70px] pb-[50px]">
-      <div className=" flex flex-row items-center justify-center">
+      <div className="flex flex-row items-center justify-center">
         <a
           className="group mx-4"
           href="https://www.linkedin.com/in/piyawat-mahattanasawat-133763221/"

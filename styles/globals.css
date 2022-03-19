@@ -113,8 +113,6 @@ html {
 .image-wrapper:hover .image-3 {
   transform: translate(0, 0);
   filter: none;
-  
-  
 }
 .image-4 {
   clip-path: polygon(100% 65%, 74% 100%, 100% 100%);

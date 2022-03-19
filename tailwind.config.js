@@ -17,7 +17,7 @@ module.exports = {
           "100%": { transform: "rotate(360deg)" },
         },
         slideInLeft: {
-          "0%": { opacity: "0", transform: "translateX(-300px)" },
+          "0%": { opacity: "0", transform: "translateX(-150px)" },
           "100%": { opacity: "1", transform: "translateX(0)" },
         },
         slideInRight: {
@@ -27,7 +27,7 @@ module.exports = {
         popIn: {
           "0%": { transform: "scale(0)" },
           "60%": { opacity: "1", transform: "scale(1.1)" },
-          "80%": { transform: "scale(0.9)" },
+          "80%": { transform: "scale(0.90)" },
           "100%": { opacity: "1", transform: "scale(1)" },
         },
         lineMoving: {

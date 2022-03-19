@@ -19,7 +19,7 @@ function Timeline({ timeLineAnimate }: TimeLineProps) {
           <div
             className={`${
               timeLineAnimate && "animate-lineMoving"
-            } delay100 hidden md:block  translat hidden md:blocke-y-7 opacity-40 w-[2px] h-0 bg-[#9251ac]  absolute left-[-48px] top-[50%] `}
+            } delay100 md:block  translat hidden md:blocke-y-7 opacity-40 w-[2px] h-0 bg-[#9251ac]  absolute left-[-48px] top-[50%] `}
           ></div>
           <div className=" rounded-lg text-[#f6a4ec] font-semibold text-2xl flex-nowrap">
             2017

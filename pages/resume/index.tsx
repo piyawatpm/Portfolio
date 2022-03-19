@@ -16,8 +16,6 @@ function Resume() {
   console.log(timeLineAnimate);
   useEffect(() => {
     const listener = () => {
-      // if (about.current?.classList.contains("is-current")) console.log("Test");
-      // else
       document.getElementById("aboutnav")?.classList.contains("iscurrent")
         ? setAboutAnimate(true)
         : setAboutAnimate(false);
@@ -38,7 +36,7 @@ function Resume() {
       window.removeEventListener("scroll", listener);
     };
   }, []);
-
+  const bgColor = "bg-gray-800";
   return (
     <div className="">
       <section
@@ -47,53 +45,126 @@ function Resume() {
       >
         <div className=" absolute inset-0 p-2 grid grid-cols-12 gap-2 transform -skew-y-12 scale-150 scroll-py-11">
           {/* background */}
-          <div className=" col-span-2 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-5 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-1 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-4 bg-gray-800 rounded hover:opacity-50 "></div>
 
-          <div className=" col-span-3 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-4 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-2 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-3 bg-gray-800 rounded hover:opacity-50 "></div>
+          <div
+            className={` col-span-2 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-5 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-1 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-4 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
 
-          <div className=" col-span-2 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-3 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-1 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-4 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-2 bg-gray-800 rounded hover:opacity-50 "></div>
+          <div
+            className={` col-span-3 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-4 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-2 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-3 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
 
-          <div className=" col-span-3 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-4 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-2 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-3 bg-gray-800 rounded hover:opacity-50 "></div>
+          <div
+            className={` col-span-2 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-3 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-1 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-4 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-2 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
 
-          <div className=" col-span-5 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-3 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-2 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-2 bg-gray-800 rounded hover:opacity-50 "></div>
+          <div
+            className={` col-span-3 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-4 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-2 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-3 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
 
-          <div className=" col-span-4 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-7 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-1 bg-gray-800 rounded hover:opacity-50 "></div>
+          <div
+            className={` col-span-5 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-3 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-2 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-2 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
 
-          <div className=" col-span-5 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-2 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-3 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-2 bg-gray-800 rounded hover:opacity-50 "></div>
+          <div
+            className={` col-span-4 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-7 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-1 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
 
-          <div className=" col-span-3 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-6 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-2 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-1 bg-gray-800 rounded hover:opacity-50 "></div>
+          <div
+            className={` col-span-5 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-2 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-3 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-2 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
 
-          <div className=" col-span-2 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-5 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-1 bg-gray-800 rounded hover:opacity-50 "></div>
-          <div className=" col-span-4 bg-gray-800 rounded hover:opacity-50 "></div>
+          <div
+            className={` col-span-3 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-6 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-2 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-1 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+
+          <div
+            className={` col-span-2 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-5 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-1 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
+          <div
+            className={` col-span-4 ${bgColor} rounded hover:opacity-50 `}
+          ></div>
         </div>
         <div id="content" className=" relative text-center">
-          <div className=" font-Raleway text-2xl sm:text-5xl text-white text-center py-10">
+          <div className="font-Raleway text-2xl sm:text-5xl text-white text-center py-10">
             {"Hello, I'm "}
             <span className="  font-Raleway-Bold text-[#04c2c9]">
               Piyawat M.
@@ -104,7 +175,7 @@ function Resume() {
 
           <a
             href="#about"
-            className="  group max-w-fit cursor-pointer transition-color duration-500 text-base sm:text-lg bg-transparent hover:bg-[#04c2c9] text-white  hover:text-white p-[14px] border-2 border-solid border-[#fff] hover:border-transparent my-5"
+            className="group max-w-fit cursor-pointer transition-color duration-500 text-base sm:text-lg bg-transparent hover:bg-[#04c2c9] text-white  hover:text-white p-[14px] border-2 border-solid border-[#fff] hover:border-transparent my-5"
           >
             View My Work
             <svg
@@ -136,11 +207,11 @@ function Resume() {
           </div>
 
           <div
-            className={` ${
+            className={`${
               aboutAnimate && "animate-slideInLeft"
             } opacity-0 bg-[#444649] h-1 w-[70px] mt-1 delay50`}
           ></div>
-          <About  aboutAnimate = {aboutAnimate}/>
+          <About aboutAnimate={aboutAnimate} />
         </div>
       </section>
       <section id="timeline" className="  bg-[#f6f9fc] pt-[80px] ">
@@ -159,7 +230,7 @@ function Resume() {
             } opacity-0 bg-[#444649] h-1 w-[70px] mt-1 delay50`}
           ></div>
 
-          <Timeline timeLineAnimate = {timeLineAnimate} />
+          <Timeline timeLineAnimate={timeLineAnimate} />
         </div>
       </section>
       <section id="projects" className=" bg-white pt-[80px]">
