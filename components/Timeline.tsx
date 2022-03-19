@@ -7,11 +7,11 @@ type TimeLineProps = {
 };
 function Timeline({ timeLineAnimate }: TimeLineProps) {
   return (
-    <div className="flex flex-col md:w-[50vw] mx-auto my-[5%]">
+    <div className="flex flex-col md:w-[50vw] mx-auto my-[5%] px-3">
       <div
         className={`${
           timeLineAnimate && "animate-fadeInDown"
-        } opacity-0 delay75  bg-white mb-5 relative flex my-5 mx-0 rounded-xl  
+        } opacity-0 delay75 bg-white mb-5 relative flex my-5 mx-0 rounded-xl  
         boxshadow`}
       >
         <div className=" rounded-l-xl bg-[#9251ac] flex items-center justify-center text-4xl text-[#9251ac] p-5">
