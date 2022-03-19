@@ -40,7 +40,7 @@ function Resume() {
   }, []);
 
   return (
-    <div>
+    <div className="">
       <section
         id="home"
         className="relative min-h-screen bg-gray-900 flex flex-col items-center justify-center overflow-hidden"
@@ -141,7 +141,7 @@ function Resume() {
               aboutAnimate && "animate-slideInLeft"
             } opacity-0 bg-[#444649] h-1 w-[70px] mt-1 delay50`}
           ></div>
-          <About  aboutAnimate />
+          <About  aboutAnimate = {aboutAnimate}/>
         </div>
       </section>
       <section id="timeline" className="  bg-[#f6f9fc] pt-[80px] ">
@@ -210,7 +210,7 @@ function Resume() {
           <h1
             className={`${
               contactAnimate && "animate-slideInRight"
-            } text-[#04c2c9] font-bold text-base delay50`}
+            } text-[#04c2c9] font-bold text-base delay50 opacity-0`}
           >
             Have a question or want to work together?
           </h1>

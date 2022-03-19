@@ -10,7 +10,7 @@ function About({ aboutAnimate }: AboutProps) {
         <div
           className={`image-wrapper ${
             aboutAnimate && " animate-slideInLeft"
-          } opacity-0 delay100`}
+          }  opacity-0  delay100`}
         >
           <img className="image-1" src="/piyawat2.jpg" />
           <img className="image-2" src="/piyawat2.jpg" />
@@ -40,9 +40,9 @@ function About({ aboutAnimate }: AboutProps) {
       <div className="skill flex-1 flex-col flex  justify-between pt-16">
         <Image
           src="/HTML5_Logo.svg"
-          className={`${
+          className={`opacity-0 ${
             aboutAnimate && "animate-slideInRight"
-          } delay75 opacity-0`}
+          } delay75 `}
           height={100}
           width={60}
         />

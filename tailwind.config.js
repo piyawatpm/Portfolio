@@ -32,7 +32,7 @@ module.exports = {
         },
         lineMoving: {
           "0%": { height: "0px" },
-          "100%": { height: "166px" },
+          "100%": { height: "170px" },
         },
         fadeInDown: {
           "0%": { opacity: 0, transform: "translate3d(0, -20%, 0)" },
