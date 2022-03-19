@@ -20,16 +20,7 @@ function ProjectsWrap() {
         >
           REACT
         </div>
-        <div
-          className={`  ${filter === 3 && "active"} mx-6 px-10 cursor-pointer`}
-        >
-          REACT
-        </div>
-        <div
-          className={`  ${filter === 4 && "active"} mx-6 px-10 cursor-pointer`}
-        >
-          REACT
-        </div>
+     
       </div>
       <div className="floatbar "> </div>
       </div>

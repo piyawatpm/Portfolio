@@ -162,8 +162,8 @@ function Resume() {
           <Timeline timeLineAnimate = {timeLineAnimate} />
         </div>
       </section>
-      {/* <section id="projects" className=" bg-white pt-[80px]">
-        <div className="h-[900px] flex-col flex items-center text-center max-w-[1200px] m-auto w-full">
+      <section id="projects" className=" bg-white pt-[80px]">
+        <div className="h-[900px] flex-col flex items-center text-center md:max-w-[1200px] m-auto w-full">
           <div
             className={`  opacity-0 ${
               projectsAnimate && " animate-slideInRight"
@@ -193,7 +193,7 @@ function Resume() {
           <path d="M 0 0 L 50 100 L 100 0 Z" fill="white" stroke="white" />
         </svg>
 
-        <div className=" mt-7 flex-col flex items-center text-center relative  w-full">
+        <div className=" mt-7 flex-col flex items-center text-center relative  w-full px-3">
           <div
             className={`  opacity-0 ${
               contactAnimate && "animate-slideInLeft"
@@ -217,7 +217,7 @@ function Resume() {
           <div
             className={`${
               contactAnimate && " animate-popIn"
-            } delay50 opacity-0 flex flex-col justify-between min-w-[500px] mt-4`}
+            } delay50 opacity-0 flex flex-col justify-between min-w-[100%] md:min-w-[500px] mt-4`}
           >
             <input
               type="text"
@@ -243,7 +243,7 @@ function Resume() {
           </div>
         </div>
       </section>
-      <Footer></Footer> */}
+      <Footer></Footer>
     </div>
   );
 }
