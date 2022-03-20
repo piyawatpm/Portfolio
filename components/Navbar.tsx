@@ -3,7 +3,7 @@ import { Transition } from "@headlessui/react";
 import Scrollspy from "react-scrollspy";
 
 type NavbarProps = {};
-function Navbar() {
+function Navbar({}: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -22,7 +22,7 @@ function Navbar() {
               <div className="hidden md:block">
                 <div className=" ml-10 flex items-baseline space-x-4">
                   <Scrollspy
-                    offset={-500}
+                    offset={-600}
                     items={["home", "about", "timeline", "projects", "contact"]}
                     currentClassName="iscurrent"
                   >
