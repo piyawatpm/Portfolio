@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Image from "next/image";
 type AboutProps = {
   aboutAnimate: boolean;
@@ -137,4 +137,4 @@ function About({ aboutAnimate }: AboutProps) {
   );
 }
 
-export default About;
+export default memo(About);

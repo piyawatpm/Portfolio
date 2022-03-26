@@ -37,7 +37,6 @@ function Title({ title, url, imageUrl, summary, id }: TitleProps) {
           </div>
         </div>
       </Link>
-     
     </div>
   );
 }

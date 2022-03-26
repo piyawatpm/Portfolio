@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { FaBirthdayCake, FaSchool, FaReact, FaSearch } from "react-icons/fa";
 import { IoMdSchool } from "react-icons/io";
 
@@ -156,4 +156,4 @@ function Timeline({ timeLineAnimate }: TimeLineProps) {
   );
 }
 
-export default Timeline;
+export default memo(Timeline);

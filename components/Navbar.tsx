@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, memo } from "react";
 import { Transition } from "@headlessui/react";
 import Scrollspy from "react-scrollspy";
 
@@ -173,4 +173,4 @@ function Navbar({}: NavbarProps) {
   );
 }
 
-export default Navbar;
+export default memo(Navbar);

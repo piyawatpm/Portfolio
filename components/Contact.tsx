@@ -1,3 +1,4 @@
+import { memo } from "react";
 type ContactProps = {
   contactAnimate: boolean;
 };
@@ -69,4 +70,4 @@ function Contact({ contactAnimate }: ContactProps) {
   );
 }
 
-export default Contact;
+export default memo(Contact);
