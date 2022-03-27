@@ -62,7 +62,7 @@ function Navbar({}: NavbarProps) {
                       href="#contact"
                       className="  transition duration-700 text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     >
-                      Contract
+                      Contact
                     </a>
                   </Scrollspy>
                 </div>
