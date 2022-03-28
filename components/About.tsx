@@ -58,7 +58,7 @@ function About({ aboutAnimate }: AboutProps) {
                   aboutAnimate && " animate-slideInLeft"
                 } text-base md:text-xl opacity-0 delay150 font-Raleway text-[#616161]`}
               >
-                Hi, this is Art. I am A motivated and enthusiastic frontend
+                Hi, this is Art. I am a motivated and enthusiastic frontend
                 developer who has always been passionate about coding and eager
                 to learn new technologies, excellent in human relations,
                 resulting in efficient and effective performances and
