@@ -27,22 +27,22 @@ function About({ aboutAnimate }: AboutProps) {
                 aboutAnimate && " animate-slideInLeft"
               }  opacity-0  delay100 w-[337px] md:w-[537px] h-[350px] md:h-[550px]  relative my-16 mx-auto`}
             >
-              <img className="md:opacity-0" src="/piyawat2.jpg" />
+              <img className="md:opacity-0" src="/piyawat3.jpg" />
               <img
                 className="opacity-0 md:opacity-100 image-1"
-                src="/piyawat2.jpg"
+                src="/piyawat3.jpg"
               />
               <img
                 className="opacity-0 md:opacity-100 image-2"
-                src="/piyawat2.jpg"
+                src="/piyawat3.jpg"
               />
               <img
                 className="opacity-0 md:opacity-100 image-3"
-                src="/piyawat2.jpg"
+                src="/piyawat3.jpg"
               />
               <img
                 className="opacity-0 md:opacity-100 image-4"
-                src="/piyawat2.jpg"
+                src="/piyawat3.jpg"
               />
             </div>
             <div>
@@ -58,10 +58,12 @@ function About({ aboutAnimate }: AboutProps) {
                   aboutAnimate && " animate-slideInLeft"
                 } text-base md:text-xl opacity-0 delay150 font-Raleway text-[#616161]`}
               >
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
-                nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam
-                corporis incidunt reprehenderit accusantium id aut architecto
-                harum quidem dolorem in!
+                Hi, this is Art. I am A motivated and enthusiastic frontend
+                developer who has always been passionate about coding and eager
+                to learn new technologies, excellent in human relations,
+                resulting in efficient and effective performances and
+                high-quality teamwork. I have extremely motivated to constantly
+                develop my skills and grow professionally.
               </p>
             </div>
           </div>

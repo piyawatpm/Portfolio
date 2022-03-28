@@ -40,19 +40,15 @@ function Timeline({ timeLineAnimate }: TimeLineProps) {
                 2017
               </div>
             </div>
-            <div className=" text-left p-5">
+            <div className=" text-left p-5 w-full ">
               <div className=" text-2xl leading-6 uppercase font-semibold text-[#9251ac] tracking-wide">
-                HIGH SCHOOL
+                HIGH SCHOOL (THAILAND)
               </div>
               <div className=" text-left basis-3/5 text-base mt-1">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
-                  nam! Nam eveniet ut aliquam ab asperiores, accusamus iure
-                  veniam corporis incidunt reprehenderit accusantium id aut
-                  architecto harum quidem dolorem in!i was born in bangkok
-                  thailand
-                </p>
+                <p>Debsirin School Mathematics-Science Program</p>
               </div>
+              <br />
+              <p className="text-right">2015-2017</p>
             </div>
           </div>
 
@@ -73,18 +69,17 @@ function Timeline({ timeLineAnimate }: TimeLineProps) {
                 2021
               </div>
             </div>
-            <div className="text-left p-5">
+            <div className="text-left p-5 w-full">
               <div className=" text-2xl leading-6 uppercase font-semibold text-[#24b47e] tracking-wide">
-                UNIVERSITY
+                UNIVERSITY (THAILAND)
               </div>
               <div className=" text-left basis-3/5 text-base mt-1">
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
-                  nam! Nam eveniet ut aliquam ab asperiores, accusamus iure
-                  veniam corporis incidunt reprehenderit accusantium id aut
-                  architecto harum quidem dolorem in!i was born in bangkok
-                  thailand
+                  Bachelor of Computer Science at Faculty of Science, King
+                  Mongkut's Institute of Technology Ladkrabang.
                 </p>
+                <br />
+                <p className="text-right">2017-2021</p>
               </div>
             </div>
           </div>
@@ -106,18 +101,20 @@ function Timeline({ timeLineAnimate }: TimeLineProps) {
                 2021
               </div>
             </div>
-            <div className=" text-left p-5">
+            <div className=" text-left p-5 w-full">
               <div className=" text-2xl leading-6 uppercase font-semibold text-[#555ac0] tracking-wide">
                 {"GEOTALENT (THAILAND)"}
               </div>
               <div className=" text-left basis-3/5 text-base mt-1">
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
-                  nam! Nam eveniet ut aliquam ab asperiores, accusamus iure
-                  veniam corporis incidunt reprehenderit accusantium id aut
-                  architecto harum quidem dolorem in!i was born in bangkok
-                  thailand
+                  Developer at GEOTALENT, where I use JavaScript, TypeScript,
+                  React, to customize government website for sending a
+                  questionnaire to community leaders to get feedback of the
+                  community that help government know the problem and implement
+                  a solution to solve a community problem
                 </p>
+                <br />
+                <p className="text-right">2021/10 - 2021/12</p>
               </div>
             </div>
           </div>
@@ -135,18 +132,17 @@ function Timeline({ timeLineAnimate }: TimeLineProps) {
                 2022
               </div>
             </div>
-            <div className=" text-left p-5">
+            <div className=" text-left p-5 w-full">
               <div className=" text-2xl leading-6 uppercase font-semibold text-[#9251ac] tracking-wide">
                 LOOKING FOR JOB
               </div>
               <div className=" text-left basis-3/5 text-base mt-1">
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
-                  nam! Nam eveniet ut aliquam ab asperiores, accusamus iure
-                  veniam corporis incidunt reprehenderit accusantium id aut
-                  architecto harum quidem dolorem in!i was born in bangkok
-                  thailand
+                  I am ready to adapt the skills that I have learned to fit in
+                  your job and willing to learn new things.
                 </p>
+                <br />
+                <p className="text-right">2022 - Now</p>
               </div>
             </div>
           </div>
