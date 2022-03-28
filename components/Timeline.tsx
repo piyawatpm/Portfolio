@@ -14,13 +14,13 @@ function Timeline({ timeLineAnimate }: TimeLineProps) {
             timeLineAnimate && "animate-slideInLeft"
           } font-Raleway-Bold text-3xl md:text-4xl text-[#444649]`}
         >
-          TIMELINE
+          Education & Experience
         </div>
 
         <div
           className={` ${
             timeLineAnimate && "animate-slideInLeft"
-          } opacity-0 bg-[#444649] h-1 w-[70px] mt-1 delay50`}
+          } opacity-0 bg-[#444649] h-1 w-[300px] mt-1 delay50`}
         ></div>
         <div className="flex flex-col md:w-[50vw] mx-auto my-[5%] px-3">
           <div
