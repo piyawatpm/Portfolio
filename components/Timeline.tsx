@@ -75,8 +75,9 @@ function Timeline({ timeLineAnimate }: TimeLineProps) {
               </div>
               <div className=" text-left basis-3/5 text-base mt-1">
                 <p>
-                  Bachelor of Computer Science at Faculty of Science, King
-                  Mongkut's Institute of Technology Ladkrabang.
+                  {
+                    "Bachelor of Computer Science at Faculty of Science, King Mongkut's Institute of Technology Ladkrabang."
+                  }
                 </p>
                 <br />
                 <p className="text-right">2017-2021</p>
