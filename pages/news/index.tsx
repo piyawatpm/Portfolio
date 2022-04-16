@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Title from "../../components/Title";
-
+import { GetServerSidePropsContext } from "next";
 // be title, url, imageUrl, summary
 function NewsPage({ article, pageNo }: any) {
   const router = useRouter();
@@ -17,25 +17,21 @@ function NewsPage({ article, pageNo }: any) {
     console.log("useEffect");
   }, [pages]);
 
-  const fetchNewData = async () => {
+  async function fetchNewData(): Promise<void> {
     const response = await fetch(
-      `https://api.spaceflightnewsapi.net/v3/articles?_limit=10&_start=${
-        pages * 10 //fetch data before state changed because   *** page2 ==> start=1*10 ***
+      `https://api.spaceflightnewsapi.net/v3/articles?_limit=10&_start=${pages * 10 //fetch data before state changed because   *** page2 ==> start=1*10 ***
       }`
     );
     const data = await response.json();
-
     setData(data);
-  };
+  }
   const handleNextPage = () => {
     setPages((page: number) => page + 1);
     fetchNewData();
   };
   const handlePreviousPage = () => {
-  
-      setPages((page: number) => page - 1);
-      fetchNewData();
-
+    setPages((page: number) => page - 1);
+    fetchNewData();
   };
 
   return (
@@ -43,7 +39,7 @@ function NewsPage({ article, pageNo }: any) {
       <div className="inline-flex justify-center items-center w-full py-8 ">
         <button
           onClick={handlePreviousPage}
-          disabled={pages<=1}
+          disabled={pages <= 1}
           className=" disabled:bg-red-500 mx-4 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l"
         >
           Prev
@@ -52,7 +48,7 @@ function NewsPage({ article, pageNo }: any) {
           className="  font-bold  h-full rounded-r text-center text-xl invalid:border-pink-500 invalid:text-pink-600"
           // for="forms-validationInputCode_error"
           value={pages}
-          type='number'
+          type="number"
           onChange={(e) => {
             setPages(parseInt(e.target.value));
           }}
@@ -91,9 +87,9 @@ function NewsPage({ article, pageNo }: any) {
 
 export default NewsPage;
 
-export async function getServerSideProps(context: any) {
+export async function getServerSideProps(context: GetServerSidePropsContext) {
   const { query, req, res } = context;
-  const { pages } = query;
+  const pages = query.pages as string;
   const pageNo = pages ? pages : "1";
   const url = pages
     ? `https://api.spaceflightnewsapi.net/v3/articles?_limit=10&_start=${

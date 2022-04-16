@@ -1,15 +1,14 @@
-import { useRouter } from "next/router";
 import React from "react";
 import { useRef } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-import Home from "../../components/Home";
-import About from "../../components/About";
-import Contact from "../../components/Contact";
-import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar";
-import Projects from "../../components/Projects";
-import Timeline from "../../components/Timeline";
+import Home from "@/resume/Home";
+import About from "@/resume/About";
+import Contact from "@/resume/Contact";
+import Footer from "@/resume/Footer";
+import Navbar from "@/resume/Navbar";
+import Projects from "@/resume/Projects";
+import Timeline from "@/resume/Timeline";
 function Resume() {
   const [aboutAnimate, setAboutAnimate] = useState(false);
   const [timeLineAnimate, setTimeLineAnimate] = useState(false);

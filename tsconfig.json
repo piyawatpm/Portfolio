@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/resume/*":["components/resume/*"]
+    },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -15,6 +19,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/newsClients/index.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/newsClients/index.js", "pages/random.tsx"],
   "exclude": ["node_modules"]
 }

@@ -130,7 +130,7 @@ function Home() {
       <div id="content" className=" relative text-center">
         <div className="font-Raleway text-2xl sm:text-5xl text-white text-center py-10">
           {"Hello, I'm "}
-          <span className="  font-Raleway-Bold text-[#04c2c9]">Piyawat M.</span>
+          <span className="  font-Raleway-Bold text-[#04c2c9]">{process.env.NEXT_PUBLIC_YOUR_NAME}</span>
           <br />
           {"I'm a front-end web developer"}
         </div>

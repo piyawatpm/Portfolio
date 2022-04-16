@@ -48,7 +48,7 @@ function Navbar({}: NavbarProps) {
                     >
                       Timeline
                     </a>
-
+    
                     <a
                       id="projectsnav"
                       href="#projects"
