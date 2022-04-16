@@ -132,7 +132,7 @@ function Home() {
           {"Hello, I'm "}
           <span className="  font-Raleway-Bold text-[#04c2c9]">{process.env.NEXT_PUBLIC_YOUR_NAME}</span>
           <br />
-          {"I'm a front-end web developer"}
+          {"I'm a front-end web developer"} 
         </div>
 
         <a
