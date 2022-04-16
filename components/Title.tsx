@@ -39,7 +39,7 @@ function Title({ title, url, imageUrl, summary, id }: TitleProps) {
       </Link>
         <h1>{summary}</h1>
       </div> */}
-      <Link href={`/news/${id}`}>
+      <Link href={`/news/${id}`} passHref>
         <div className="max-w-sm w-full lg:max-w-full lg:flex">
           <h1>{process.env.RANDOM_NAME_API}</h1>
           <div className=" cursor-pointer  flex-none h-[256px]">
@@ -51,6 +51,7 @@ function Title({ title, url, imageUrl, summary, id }: TitleProps) {
               )}`}
               width="250"
               height="256"
+              alt="image"
             ></Image>
           </div>
           <div className=" cursor-pointer hover:bg-[gainsboro] border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal w-full">
