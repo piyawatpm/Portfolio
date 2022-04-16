@@ -1,4 +1,5 @@
 import React from "react";
+import { GetServerSidePropsContext } from "next";
 type Detail = {
   id: 0;
   featured: boolean;
@@ -49,9 +50,9 @@ function NewDetail({ details }: any) {
 //   };
 // }
 export default NewDetail;
-export async function getServerSideProps(context: any) {
+export async function getServerSideProps(context: GetServerSidePropsContext) {
   const { params } = context;
-  const { newsId } = params;
+  const newsId = params?.newsId;
   const response = await fetch(
     `https://api.spaceflightnewsapi.net/v3/articles/${newsId}`
   );
